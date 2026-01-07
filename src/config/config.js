@@ -1,8 +1,17 @@
+import mongoose  from "mongoose";
 import dotenv from "dotenv";
+import errorHandler from "../middlewares/errorHandler.js";
 dotenv.config();
 
-export default {
-  port: process.env.PORT || 5000,
-  mongoUri: process.env.MONGO_URI,
-  env: process.env.NODE_ENV || "development",
-};
+const url = process.env.DB_URL ;
+
+export const  connectUsingMongoose = async ()=>{
+  try{
+    await mongoose.connect(url);
+    console.log("connected using mongoose");
+  }
+    catch(err){
+      throw new errorHandler("Error in connection database ",500);
+    
+  }
+}

@@ -1,0 +1,5 @@
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/auth/me"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/auth/me"}
+{"body":{"audienceSegment":"rural","chanel":"rcs","name":"campaign1","status":"active"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"audienceSegment":"rural","chanel":"rcs","name":"campaign1","scheduledTime":"2023-04-01","status":"active"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"audienceSegment":"rural","chanel":"rcs","name":"campaign1","scheduledTime":"2023-04-01","status":"active"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
