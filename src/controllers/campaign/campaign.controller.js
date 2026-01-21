@@ -20,11 +20,22 @@ export default class CampaignController{
                 scheduledTime,
              createdBy: userID});
             //const newCampaign = await this.campaignRepository.createCampaign(campaignData);
-            return res.status(201).json(newCampaign);
+            return res.status(201).json({message:"Campaign created succsessfully"});
 
         }
         catch(err){
             next(err);
         }
     }
+    async getAllCampaign(req,res,next){
+        try {
+            const CampaignDetail = await this.campaignRepository.getCampign(req.userID);
+
+            res.status(200).json({CampaignDetail});
+            
+        } catch (err) {
+            next(err)
+        }
+   }
+   
 }

@@ -3,3 +3,18 @@
 {"body":{"audienceSegment":"rural","chanel":"rcs","name":"campaign1","status":"active"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
 {"body":{"audienceSegment":"rural","chanel":"rcs","name":"campaign1","scheduledTime":"2023-04-01","status":"active"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
 {"body":{"audienceSegment":"rural","chanel":"rcs","name":"campaign1","scheduledTime":"2023-04-01","status":"active"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"audienceSegment":"rural","chanel":"sms","name":"campaign2","scheduledTime":"2023-13-01","status":"scheduled"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"audienceSegment":"rural","chanel":"sms","name":"campaign2","scheduledTime":"2023-13-01","status":"scheduled"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"audienceSegment":"rural","chanel":"sms","name":"campaign2","scheduledTime":"2023-13-01","status":"scheduled"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"audienceSegment":"urban","chanel":"sms","name":"campaign 2","scheduledTime":"2026-13-01","status":"scheduled"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"audienceSegment":"urban","chanel":"sms","name":"campaign 2","scheduledTime":"2026-01-13","status":"scheduled"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"audienceSegment":"urban","chanel":"email","name":"campaign 3","scheduledTime":"2025-12-31","status":"paused"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/auth/me"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/campaigns"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"POST","service":"request-logging","url":"/api/campaigns"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/campaigns"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/campaigns"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/campaigns"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/campaigns"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/campaigns"}
+{"body":{"email":"***","password":"***"},"level":"info","message":"Incoming request","method":"GET","service":"request-logging","url":"/api/campaigns"}

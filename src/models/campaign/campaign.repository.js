@@ -18,4 +18,16 @@ export default class CampignRepository{
         }
 
     }
+
+    async getCampign(userID){
+        try {
+            return await campaignModel.find({});
+            
+        } catch (err) {
+             if(err instanceof mongoose.Error.ValidationError){
+                throw err
+             }
+        }
+
+    }
 }

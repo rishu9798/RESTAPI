@@ -9,7 +9,7 @@ export const campaignSchema = new mongoose.Schema({
     },
     chanel:{
         type:String,
-        enum:['rcs','sms,email'],
+        enum:['rcs','sms','email'],
         required:true
     
     },

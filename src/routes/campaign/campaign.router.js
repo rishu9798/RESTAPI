@@ -8,7 +8,9 @@ const router = express.Router();
 router.post('/',(req,res,next)=>{
     campaignControler.createCampaign(req,res,next)
 });
-
+router.get('/',(req,res,next)=>{
+    campaignControler.getAllCampaign(req,res,next)
+});
 
 
 

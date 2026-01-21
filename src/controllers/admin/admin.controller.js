@@ -1,8 +1,10 @@
-import UserRepository from "../../models/user/user.repository.js";
+// import CampignRepository from "../../models/campaign/campaign.repository.js";
+ import UserRepository from "../../models/user/user.repository.js";
 
 export default class AdminController{
   constructor(){
     this.userRepository = new UserRepository();
+    // this.campaignRepository= new CampignRepository();
 
   }
     async getAllUsers(req,res,next){
@@ -15,4 +17,5 @@ export default class AdminController{
             next(err);
         }
     }
+    
 }
