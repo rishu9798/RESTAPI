@@ -11,6 +11,7 @@ router.post('/',(req,res,next)=>{
 router.get('/',(req,res,next)=>{
     campaignControler.getAllCampaign(req,res,next)
 });
+router.get('/:id',(req,res)=> campaignControler.getOneCampaign(req,res));
 
 
 

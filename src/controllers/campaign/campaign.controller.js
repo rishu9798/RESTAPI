@@ -28,6 +28,7 @@ export default class CampaignController{
         }
     }
     async getAllCampaign(req,res,next){
+        // console.log(req.userID,"from getALl")
         try {
             const CampaignDetail = await this.campaignRepository.getCampign(req.userID);
 
@@ -36,6 +37,24 @@ export default class CampaignController{
         } catch (err) {
             next(err)
         }
+   }
+   async getOneCampaign(req,res){
+    console.log(req.userID)
+    try {
+        const userID = req.userID;
+        const campaignId = req.params.id
+        const campaignOne = await this.campaignRepository.getOnecampaign(campaignId,userID);
+        if(!campaignOne){
+          return  res.status(401).send("inavlid Campaign id");
+        
+        }
+        console.log("user id ",userID)
+        return res.status(200).json({campaignOne})
+    } catch (err) {
+        // next(err)
+
+        console.log(err)
+    }
    }
    
 }

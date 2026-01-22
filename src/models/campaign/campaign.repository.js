@@ -21,7 +21,7 @@ export default class CampignRepository{
 
     async getCampign(userID){
         try {
-            return await campaignModel.find({});
+            return await campaignModel.find({createdBy:userID});
             
         } catch (err) {
              if(err instanceof mongoose.Error.ValidationError){
@@ -29,5 +29,30 @@ export default class CampignRepository{
              }
         }
 
+    }
+
+    async getOnecampaign(id,userID){
+        try {
+
+             if (!mongoose.Types.ObjectId.isValid(id)) {
+                throw new Error("Invalid campaign ID");
+                }
+            //  console.log("user id via repo of camp ",userID)
+            //  console.log(id)
+            //  console.log()
+            return await campaignModel.findOne({
+               _id:id,
+                createdBy:userID
+
+            })
+
+            
+        } catch (err) {
+            if(err instanceof mongoose.Error.ValidationError){
+                throw err 
+
+            }
+            
+        }
     }
 }
