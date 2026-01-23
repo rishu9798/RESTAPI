@@ -1,4 +1,4 @@
-// import CampignRepository from "../../models/campaign/campaign.repository.js";
+//  import CampignRepository from "../../models/campaign/campaign.repository.js";
  import UserRepository from "../../models/user/user.repository.js";
 
 export default class AdminController{

@@ -56,5 +56,41 @@ export default class CampaignController{
         console.log(err)
     }
    }
+   async updateProduct(req,res,next){
+    try {
+        const userID = req.userID;
+        const campaignId = req.params.id;
+        const updatedData = req.body;
+        const updation = await this.campaignRepository.updateProduct(campaignId,userID,updatedData);
+         
+        console.log(userID);
+        console.log("campaign id",campaignId)
+        console.log(updatedData);
+        if(!updation){
+            return res.status(403).send("invalid credentials");
+        }
+        return res.status(201).json({updation})
+        
+    } catch (err) {
+        next(err)
+    }
+   }
+    async deleteCampaign(req,res,next){
+      try {
+        const userID = req.userID;
+        const campaignId = req.params.id;
+        console.log(campaignId)
+        console.log(userID)
+        const deletedCampaign = await this.campaignRepository.deleteOne(campaignId);
+        if(!deletedCampaign){
+         return  res.status(403).send("inavalid credentials");
+
+        }
+        return res.status(200).json({deletedCampaign})
+        
+      } catch (err) {
+        next(err)
+      }
+    }
    
 }

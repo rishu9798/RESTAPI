@@ -35,6 +35,7 @@ async singin(req,res,next){
             return res.status(404).json({message:"User not found"});
          }
          else{
+            // console.log(password)
             const result = await bcrypt.compare(password,users.password);
             if(result){
                 const token = jwt.sign(
